@@ -1,0 +1,14 @@
+<form action="" [formGroup]="todoform" (ngSubmit)="edittodo()">
+    <input type="hidden" formControlName="name" class="form-control" formControlName="id" id="exampleFormControlInput1" placeholder="Todo ?">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Name </label>
+        <input type="email" formControlName="name" class="form-control" id="exampleFormControlInput1" placeholder="Todo ?">
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" formControlName="isactive" type="checkbox" value="" id="flexCheckIndeterminate">
+        <label class="form-check-label" for="flexCheckIndeterminate">
+          Active
+        </label>
+      </div>
+      <button class="btn btn-primary">Update</button>
+</form>
